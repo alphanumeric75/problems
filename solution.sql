@@ -1,4 +1,4 @@
-
+-- 1st solution 
 
 select 
 	employee_id, 
@@ -9,6 +9,9 @@ select
 		rows between unbounded preceding and current row  
 	) as cumulative_sum 
 from sales ; 
+
+
+-- 2nd problem solution 
 
 select * 
 from ( 
@@ -23,6 +26,9 @@ from (
  )  as sub_table 
 where total_sum > 250 
 order by sub_table.customer_id ; 
+
+
+-- 3nd problem solution 
 
 create table sales as (    
 	sale_id int , 
